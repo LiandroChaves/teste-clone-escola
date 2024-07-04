@@ -1,0 +1,85 @@
+/* src/components/Aprovacoes.module.css */
+
+.aprovacoes_container {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(to right, #0f3326, #194e39);
+}
+
+.linha_aprov .aprovacoes_title {
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+}
+
+.aprovacoes_title {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+}
+
+.card {
+    background: #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.card_nome {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: black;
+}
+
+.card_curso {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.linha_aprov {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+    .grid_container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .grid_container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .grid_container {
+        grid-template-columns: 1fr;
+    }
+}
